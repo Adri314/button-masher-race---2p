@@ -1,7 +1,8 @@
 {
-    "name": "Button masher race - 2P",
+    "name": "Animal Button masher race - 2P",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*"
     },
     "description": "",
     "files": [
