@@ -320,11 +320,12 @@ true
 )
 game.splash("Button Masher Race!")
 game.splash("P1: Press A", "P2: Press B")
+effects.blizzard.startScreenEffect()
 game.onUpdateInterval(200, function () {
-    if (!(controller.A.isPressed()) && p1.vx < 0) {
+    if (!(controller.A.isPressed()) && p1.vx > 0) {
         p1.vx += friction
     }
-    if (!(controller.B.isPressed()) && p2.vx < 0) {
+    if (!(controller.B.isPressed()) && p2.vx > 0) {
         p2.vx += friction
     }
 })
